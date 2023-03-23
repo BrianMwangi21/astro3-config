@@ -20,6 +20,12 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["la"] = { ':lua require("harpoon.mark").add_file()<CR>' },
+    ["lm"] = { ':lua require("harpoon.ui").toggle_quick_menu()<CR>' },
+    ["l1"] = { ':lua require("harpoon.ui").nav_file(1)<CR>' },
+    ["l2"] = { ':lua require("harpoon.ui").nav_file(2)<CR>' },
+    ["l3"] = { ':lua require("harpoon.ui").nav_file(3)<CR>' },
+    ["l4"] = { ':lua require("harpoon.ui").nav_file(4)<CR>' },
   },
   t = {
     -- setting a mapping to false will disable it
